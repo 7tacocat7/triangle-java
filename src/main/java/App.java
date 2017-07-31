@@ -33,6 +33,8 @@ public class App {
 
                 if (userSide1 == userSide2 && userSide2 == userSide3) {
                     System.out.println("Equilateral");
+                } else if ((userSide1 > (userSide2 + userSide3)) || (userSide2 > (userSide1 + userSide3)) || (userSide3 > (userSide2 + userSide1)) ){
+                        System.out.println("Those sides don't make a valid triangle!");
                 } else if ((userSide1 == userSide2) || (userSide2 == userSide3) || (userSide1 == userSide3)) {
                     System.out.println("Isosceles");
                 } else if ((userSide1 != userSide2) && (userSide2 != userSide3) && (userSide1 != userSide3)) {
